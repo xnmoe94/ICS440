@@ -8,17 +8,6 @@ public class Square implements Drawable {
 	
 	private double width;
 	private Point UpperLeft;
-	
-	
-	
-
-	
-
-
-
-	
-
-
 
 	public Square(Point upperLeft, double width) {
 		super();
@@ -59,19 +48,20 @@ public class Square implements Drawable {
 	@Override
 	public void draw(Graphics2D g2) {
 		// TODO Auto-generated method stub
-		if (g2 == null){
-            return;
-        }
 		
-		 int x = (int) Math.floor(this.getUpperLeft().getX());
-	        int y = (int) Math.floor(this.getUpperLeft().getY());
-	        int w = (int) Math.floor(this.width);
+		
+		 	int x1 = (int) Math.floor(this.getUpperLeft().getX());
+	        int y1 = (int) Math.floor(this.getUpperLeft().getY());
+	        int z1= (int) Math.floor(this.width);
 
-	        g2.drawLine(x, y, x+w, y); // top
-	        g2.drawLine(x+w, y, x+w, y+w); // right
-	        g2.drawLine(x+w, y+w, x, y+w); // bottom
-	        g2.drawLine(x, y+w, x, y); // left
+	        g2.drawLine(x1, y1, x1+z1, y1); 
+	        g2.drawLine(x1+z1, y1, x1+z1, y1+z1); 
+	        g2.drawLine(x1+z1, y1+z1, x1, y1+z1); 
+	        g2.drawLine(x1, y1+z1, x1, y1);
 		
+	        
+	        
+	        
 
 	}
 

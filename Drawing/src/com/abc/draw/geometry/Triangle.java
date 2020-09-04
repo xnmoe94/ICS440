@@ -59,18 +59,24 @@ public class Triangle implements Drawable {
 		// TODO Auto-generated method stub
 
         // TODO: this is hard to read...
+		
+		
+		//Drawing Points
 
-        int l1 = (int) Math.floor(getP1().getX());
-        int z1 = (int) Math.floor(getP1().getY());
-        int l2 = (int) Math.floor(getP2().getX());
-        int z2 = (int) Math.floor(getP2().getY());
-        int l3 = (int) Math.floor(getP3().getX());
-        int z3 = (int) Math.floor(getP3().getY());
-
-
-        g2.drawLine(l1, z1, l2, z2);
-        g2.drawLine(l2, z2, l3, z3);
-        g2.drawLine(l3, z3, l1, z1);
+        int x1 = (int) Math.floor(getP1().getX());
+        int y1 = (int) Math.floor(getP1().getY());
+        int x2 = (int) Math.floor(getP2().getX());
+        int y2 = (int) Math.floor(getP2().getY());
+        int x3 = (int) Math.floor(getP3().getX());
+        int y3 = (int) Math.floor(getP3().getY());
+        
+        
+ 
+        g2.drawLine(x1, y1, x2, y2);
+        g2.drawLine(x2, y2, x3, y3);
+        g2.drawLine(x3, y3, x1, y1);
+       
+       
 		
 		
 		

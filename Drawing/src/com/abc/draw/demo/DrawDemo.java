@@ -10,7 +10,7 @@ import com.abc.draw.geometry.*;
 public class DrawDemo {
     private static Drawing createDrawing() {
         Drawing drawing = new Drawing();
-        
+//        
         Point p1 = new Point(50.0, 5.0);
         Point p2 = new Point(300.0, 50.0);
         Line line = new Line(p1, p2);
